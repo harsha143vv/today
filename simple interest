@@ -1,0 +1,30 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+class intrest
+{
+	float p,t,r,x,y;
+	public:
+		void getdata();
+		void display();
+};
+void intrest::getdata()
+    {
+	  cout<<"enter the p,t,r values";
+	  cin>>p>>t>>r;
+    }
+     void intrest::display()
+    {
+	   cout<<"intrerst for money";
+	      x=p*t*r/100;
+	     cout<<x;
+	      cout<<"compound intrest";
+	      y=p*pow((1+r/100),t);
+	       cout<<y;
+    }
+main()
+{
+	intrest m;
+	m.getdata();
+	m.display();
+}
